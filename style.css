@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#726A95;
+    font-family:"ubuntu";
+}
+h3{
+    font-size: 1.6rem;
+}
+p{
+    font-size: 1.2rem;
+}
+:root{
+    --primary-color:#719FB0;
+    --secondsry-color:#726A95;
+}
+
+.container{
+    background-color:#726A95;
+    margin-top: 4rem;
+   
+}
+.execute{
+    /* background-color: red; */
+    background-color: var(--primary-color);
+    margin-top:4rem;
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr ;
+   width:90%;
+   margin:auto;
+   grid-gap:2rem;
+
+}
+.editor{
+    background-color: var(--primary-color);
+    /* background-color:blue; */
+    margin-top:4rem;
+   display:grid;
+   grid-template-columns:1fr  1fr ;
+   width:90%;
+   margin:auto;
+   grid-gap:2.1rem;
+   
+
+}
+.graphic{
+    background-color: var(--primary-color);
+    /* background-color:yellow; */
+    margin-top:4rem;
+   display:grid;
+   grid-template-columns:1fr 1fr ;
+   width:90%;
+   margin:auto;
+   grid-gap:2rem;
+
+}
+.web{
+    background-color:var(--primary-color);
+    /* background-color: green; */
+    margin-top:4rem;
+   display:grid;
+   grid-template-columns:1fr 1fr;
+   width:90%;
+   margin:auto;
+   grid-gap:2rem;
+
+}
+.card{
+    background-color: white;
+   height:20rem;
+   border: 2px solid white;
+   box-shadow: -1px 7px 20px -4px rgba(0,0,0,0.75);
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#team-img{
+    width:10rem;
+}
+@media (max-width:900px){
+    .execute{
+        grid-template-columns: 50% 50%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+    .editor{
+        grid-template-columns: 50% 50%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+    .web{
+        grid-template-columns: 50% 50%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+    .graphic{
+        grid-template-columns: 50% 50%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+}
+@media (max-width:450px){
+    .execute{
+        grid-template-columns:100%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+    .editor{
+        grid-template-columns:100%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+    .web{
+        grid-template-columns:100%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+    .graphic{
+        grid-template-columns:100%;
+        width:90%;
+   margin:auto;
+   grid-gap:2rem;
+    }
+}
